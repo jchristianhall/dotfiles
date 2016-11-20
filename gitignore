@@ -1,13 +1,21 @@
-.DS_Store
-*.sw[nop]
-.bundle
-.byebug_history
-.env
-db/*.sqlite3
-log/*.log
-rerun.txt
-tags
-!tags/
-tmp/**/*
-!tmp/cache/.keep
+._*
+*~
+
+# Project files
+*.sublime-project
+*.sublime-workspace
+
+# Build files
+node_modules
+dist
+test/temp
+.sass-cache
+bower_components
+.tmp
 *.pyc
+
+# Stupid OS X files
+.DS_Store
+.Thumbs.db
+.Trashes
+.Spotlight-V100

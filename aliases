@@ -1,19 +1,20 @@
 # Unix
-alias ll="ls -al"
+alias ll="ls -aGl"
 alias ln="ln -v"
 alias mkdir="mkdir -p"
 alias e="$EDITOR"
 alias v="$VISUAL"
+alias cc="say 'Command complete'"
 
-# Bundler
-alias b="bundle"
+# Node
+alias nls="npm ls -g --depth=0"
 
-# Rails
-alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
-alias s="rspec"
+# GoNoodle
+alias be="bundle exec"
+alias gns="bundle exec rails s -b 0.0.0.0"
+alias gnr="RESQUE_INLINE=1 bundle exec rails s -b 0.0.0.0"
+alias nukedb="bundle exec rake log:clear db:reset && bundle exec rake db:test:prepare && redis-cli flushall"
+alias nukedbf="FULL=1 bundle exec rake log:clear db:reset && bundle exec rake db:test:prepare && redis-cli flushall"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
-
-# Include custom aliases
-[[ -f ~/.aliases.local ]] && source ~/.aliases.local

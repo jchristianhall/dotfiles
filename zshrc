@@ -39,8 +39,7 @@ _load_settings() {
 }
 _load_settings "$HOME/.zsh/configs"
 
+export N_PREFIX=${HOME}/.npm-packages/n
+
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
-
-# Local config
-[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local

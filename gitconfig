@@ -1,27 +1,62 @@
 [init]
   templatedir = ~/.git_template
+[user]
+	name = Christian Hall
+	email = jchristian192@gmail.com
 [push]
   default = current
 [color]
-  ui = auto
+  ui = always
 [alias]
   aa = add --all
   ap = add --patch
-  branches = for-each-ref --sort=-committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/remotes
+  ba = for-each-ref --sort=-committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/remotes
+  br = branch
   ci = commit -v
   co = checkout
+  df = diff
+  fo = fetch origin -v --prune
+  ls = ls-files
+  mg = merge
   pf = push --force-with-lease
+  pl = pull origin
+  ps = push origin
+  rl = reflog --pretty=reflog
   st = status
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
 [merge]
-  ff = only
+  ff = true
+  tool = opendiff
+[mergeTool]
+  keepBackup = false
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
 [commit]
   template = ~/.gitmessage
 [fetch]
   prune = true
+[pager]
+  diff = diff-so-fancy | less --tabs=1,5 -RFX
+  show = diff-so-fancy | less --tabs=1,5 -RFX
+[pretty]
+  reflog = %C(auto)%h %<|(17)%gd %<|(30)%C(blue)%cr%C(reset) %s
 [rebase]
   autosquash = true
-[include]
-  path = ~/.gitconfig.local
