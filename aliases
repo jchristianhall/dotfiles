@@ -1,5 +1,5 @@
 # Unix
-alias ll="ls -aGl"
+alias ll="ls -al"
 alias ln="ln -v"
 alias mkdir="mkdir -p"
 alias e="$EDITOR"
@@ -10,6 +10,7 @@ alias cc="say 'Command complete'"
 alias nls="npm ls -g --depth=0"
 
 # GoNoodle
+alias mux="tmuxinator"
 alias be="bundle exec"
 alias gns="bundle exec rails s -b 0.0.0.0"
 alias gnr="RESQUE_INLINE=1 bundle exec rails s -b 0.0.0.0"
