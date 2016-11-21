@@ -6,6 +6,9 @@ alias e="$EDITOR"
 alias v="$VISUAL"
 alias cc="say 'Command complete'"
 
+# Git
+alias gaac="git add . && git commit"
+
 # Node
 alias nls="npm ls -g --depth=0"
 

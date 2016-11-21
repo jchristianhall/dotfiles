@@ -21,6 +21,7 @@
   pf = push --force-with-lease
   pl = pull origin
   ps = push origin
+  rb = rebase -i
   rl = reflog --pretty=reflog
   st = status
 [core]
