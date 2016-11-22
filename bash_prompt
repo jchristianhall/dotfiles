@@ -1,0 +1,22 @@
+# Configure prompt and colours using terminal's built in colours.
+export TERM=xterm-256color
+
+BLACK='\e[0;30m'
+RED='\e[0;31m'
+GREEN='\e[0;32m'
+YELLOW='\e[0;33m'
+BLUE='\e[0;34m'
+PURPLE='\e[0;35m'
+CYAN='\e[0;36m'
+WHITE='\e[0;37m'
+
+function parse_git_dirty() {
+  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
+}
+
+function parse_git_branch() {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
+}
+
+# User(Green)@(White)Machine(Blue):Path(Yellow) Branch(Purple)
+PS1="\[\e]2;$PWD\[\a\]\[\e]1;\]$(basename "$(dirname "$PWD")")/\W\[\a\]\[${BOLD}${GREEN}\]\u\[$WHITE\]@\[$BLUE\]\h:\[$WHITE\]\[$YELLOW\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" \")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n\$ \[$WHITE\]"

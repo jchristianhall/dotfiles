@@ -83,6 +83,7 @@ configuration:
 
 Shell aliases and scripts:
 
+* Adds some bash settings in case you don't wanna use zsh
 * `g` with no arguments is `git status` and with arguments acts like `git`.
 * `mcd` to make a directory and change into it.
 * `v` for `$VISUAL`.
