@@ -13,6 +13,7 @@ General Homebrew packages:
     rbenv
     tmux
     zsh
+    zsh-syntax-highlighting
 
 Work specific Homebrew packages:
 

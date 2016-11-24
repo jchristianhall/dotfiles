@@ -1,4 +1,4 @@
-# load custom executable functions
+# Load custom executable functions
 for function in ~/.zsh/functions/*; do
   source $function
 done
@@ -41,5 +41,8 @@ _load_settings "$HOME/.zsh/configs"
 
 export N_PREFIX=${HOME}/.npm-packages/n
 
-# aliases
+# Aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
+
+# Syntax highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
