@@ -48,12 +48,17 @@ Install the dotfiles:
 
     env RCRC=$HOME/dotfiles/rcrc rcup
 
-You can safely run `rcup` multiple times to update:
-
-    rcup
-
 You should run `rcup` after pulling a new version of the repository to symlink
 any new files in the repository.
+
+Install [pure prompt](https://github.com/sindresorhus/pure#manually)
+
+    ln -s "$HOME/dotfiles/pure/pure.zsh" "$HOME/.zsh/functions/prompt_pure_setup"
+    ln -s "$HOME/dotfiles/pure/async.zsh" "$HOME/.zsh/functions/async"
+    autoload -U promptinit; promptinit
+    prompt pure
+
+Most of these steps should be automated in `setup.sh` eventually.
 
 What's in it?
 -------------
@@ -88,6 +93,13 @@ Shell aliases and scripts:
 * `g` with no arguments is `git status` and with arguments acts like `git`.
 * `mcd` to make a directory and change into it.
 * `v` for `$VISUAL`.
+
+Todo
+----
+* `setup.sh` to automate even more things
+* Brewfile to automate brew installations
+* Organize directories
+* Manage atom configs in this repo
 
 License
 -------
