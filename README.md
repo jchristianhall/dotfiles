@@ -22,11 +22,15 @@ Work specific Homebrew packages:
     phantomjs
     redis
 
-Other dependencies:
+JavaScript:
 
-    Node and npm (from source)
-    n (npm)
-    yarn (npm)
+    node (source)
+    [npm](https://docs.npmjs.com/getting-started/fixing-npm-permissions#option-2-change-npms-default-directory-to-another-directory)
+    gulp-cli
+    n
+    yarn
+    webpack
+    webpack-dev-server
 
 Set zsh as your login shell:
 
