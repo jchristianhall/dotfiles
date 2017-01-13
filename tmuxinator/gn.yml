@@ -28,5 +28,10 @@ windows:
           - cd gonoodle && bundle exec guard
   - Accounts:
       - cd accounts && bundle exec rails server -p 3001
-  - Signup:
-      - cd gn-sign-up && npm start
+  - Front-end:
+      layout: even-horizontal
+      panes:
+        - Signup:
+          - cd gn-sign-up && npm start
+        - Main:
+          - cd gn-web && npm start
