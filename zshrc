@@ -39,8 +39,6 @@ _load_settings() {
 }
 _load_settings "$HOME/.zsh/configs"
 
-export N_PREFIX=${HOME}/.npm-packages/n
-
 # Aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
