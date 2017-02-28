@@ -13,6 +13,9 @@ PATH=/usr/local/opt/ruby/bin:$PATH
 PATH=".git/safe/../../bin:$PATH"
 
 # NPM
+export PREFIX=$HOME/.npm-packages
+export N_PREFIX=$HOME/.npm-packages
+
 NPM_PACKAGES="$HOME/.npm-packages"
 NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 PATH="$NPM_PACKAGES/bin:$PATH"
