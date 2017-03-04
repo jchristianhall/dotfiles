@@ -11,8 +11,10 @@ alias gaac="git add . && git commit"
 
 # Node
 alias ygls="yarn global ls"
-alias ys="yarn start"
+alias yga="yarn global add"
 alias yi="yarn install"
+alias yr="yarn run"
+alias ys="yarn start"
 
 # GoNoodle
 alias mux="tmuxinator"
