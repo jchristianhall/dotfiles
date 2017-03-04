@@ -9,31 +9,39 @@ Requirements
 
 Homebrew packages:
 
-    diff-so-fancy
-    node --without-npm
-    rbenv
-    tmux
-    yarn
-    zsh
-    zsh-syntax-highlighting
+```
+diff-so-fancy
+node --without-npm
+rbenv
+tmux
+yarn
+zsh
+zsh-syntax-highlighting
+```
 
 Work specific Homebrew packages:
 
-    imagemagick
-    mysql56
-    phantomjs
-    redis
+```
+imagemagick
+mysql56
+phantomjs
+redis
+```
 
 JavaScript:
 
-    gulp-cli
-    n
-    webpack
-    webpack-dev-server
+```
+gulp-cli
+n
+webpack
+webpack-dev-server
+```
 
 Set zsh as your login shell (May need to do this through Users & Groups on MacOS):
 
-    chsh -s $(which zsh)
+```
+chsh -s $(which zsh)
+```
 
 Install
 -------
@@ -44,28 +52,39 @@ Install
 
 1. Install npm
 
+    ```
     curl -L https://www.npmjs.org/install.sh | sh
+    ```
 
 1. Setup SSH key with GitHub
 
+    Be sure to permanently add the key in `~/.ssh/config`
+
 1. Clone onto your laptop:
 
+    ```
     git clone git://github.com/jchristianhall/dotfiles.git ~/dotfiles
+    ```
 
 1. Install [rcm](https://github.com/thoughtbot/rcm):
 
+    ```
     brew tap thoughtbot/formulae
     brew install rcm
+    ```
 
 1. Install the dotfiles:
 
+    ```
     env RCRC=$HOME/dotfiles/rcrc rcup
+    ```
 
-You should run `rcup` after pulling a new version of the repository to symlink
-any new files in the repository.
+    You should run `rcup` after pulling a new version of the repository to symlink
+    any new files in the repository.
 
 1. Install [pure prompt](https://github.com/sindresorhus/pure#manually)
 
+    ```
     cd pure
     git submodule init
     git submodule update
@@ -73,6 +92,7 @@ any new files in the repository.
     ln -s "$HOME/dotfiles/pure/async.zsh" "$HOME/.zsh/functions/async"
     autoload -U promptinit; promptinit
     prompt pure
+    ```
 
 1. Install global yarn packages
 
@@ -80,20 +100,8 @@ any new files in the repository.
 
 Most of these steps should be automated in `setup.sh` eventually.
 
-Additional Setup
-----------------
-* Set up ~/.ssh/config and Github SSH keys
-
 What's in it?
 -------------
-
-[tmux](http://robots.thoughtbot.com/a-tmux-crash-course)
-configuration:
-
-* Improve color resolution.
-* Remove administrative debris (session name, hostname, time) in status bar.
-* Set prefix to `Ctrl+j`
-* Soften status bar color from harsh green to light gray.
 
 [git](http://git-scm.com/) configuration:
 
@@ -106,6 +114,13 @@ configuration:
 * Makes output pretty with `diff-so-fancy`.
 * Sets smart defaults for lots of things like `.gitignore`, etc.
 * Add a fun gitmessage comment
+
+[tmux](http://robots.thoughtbot.com/a-tmux-crash-course) configuration:
+
+* Improve color resolution.
+* Remove administrative debris (session name, hostname, time) in status bar.
+* Set prefix to `Ctrl+j`
+* Soften status bar color from harsh green to light gray.
 
 [npm](https://www.npmjs.com) configuration:
 
