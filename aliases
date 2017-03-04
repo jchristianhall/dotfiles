@@ -10,7 +10,9 @@ alias cc="say 'Command complete'"
 alias gaac="git add . && git commit"
 
 # Node
-alias nls="npm ls -g --depth=0"
+alias ygls="yarn global ls"
+alias ys="yarn start"
+alias yi="yarn install"
 
 # GoNoodle
 alias mux="tmuxinator"

@@ -7,11 +7,13 @@ because I'm picky. Constantly a work in progress.
 Requirements
 ------------
 
-General Homebrew packages:
+Homebrew packages:
 
     diff-so-fancy
+    node --without-npm
     rbenv
     tmux
+    yarn
     zsh
     zsh-syntax-highlighting
 
@@ -24,45 +26,63 @@ Work specific Homebrew packages:
 
 JavaScript:
 
-    node (source)
-    [npm](https://docs.npmjs.com/getting-started/fixing-npm-permissions#option-2-change-npms-default-directory-to-another-directory)
     gulp-cli
     n
-    yarn
     webpack
     webpack-dev-server
 
-Set zsh as your login shell:
+Set zsh as your login shell (May need to do this through Users & Groups on MacOS):
 
     chsh -s $(which zsh)
 
 Install
 -------
 
-Clone onto your laptop:
+1. Download Xcode and CLI utilities
+
+1. Install Homebrew and Homebrew packages
+
+1. Install npm
+
+    curl -L https://www.npmjs.org/install.sh | sh
+
+1. Setup SSH key with GitHub
+
+1. Clone onto your laptop:
 
     git clone git://github.com/jchristianhall/dotfiles.git ~/dotfiles
 
-Install [rcm](https://github.com/thoughtbot/rcm):
+1. Install [rcm](https://github.com/thoughtbot/rcm):
 
     brew tap thoughtbot/formulae
     brew install rcm
 
-Install the dotfiles:
+1. Install the dotfiles:
 
     env RCRC=$HOME/dotfiles/rcrc rcup
 
 You should run `rcup` after pulling a new version of the repository to symlink
 any new files in the repository.
 
-Install [pure prompt](https://github.com/sindresorhus/pure#manually)
+1. Install [pure prompt](https://github.com/sindresorhus/pure#manually)
 
+    cd pure
+    git submodule init
+    git submodule update
     ln -s "$HOME/dotfiles/pure/pure.zsh" "$HOME/.zsh/functions/prompt_pure_setup"
     ln -s "$HOME/dotfiles/pure/async.zsh" "$HOME/.zsh/functions/async"
     autoload -U promptinit; promptinit
     prompt pure
 
+1. Install global yarn packages
+
+1. Manually add tmuxinator configs from private location
+
 Most of these steps should be automated in `setup.sh` eventually.
+
+Additional Setup
+----------------
+* Set up ~/.ssh/config and Github SSH keys
 
 What's in it?
 -------------
@@ -85,6 +105,11 @@ configuration:
 * Adds lots of aliases for common commands.
 * Makes output pretty with `diff-so-fancy`.
 * Sets smart defaults for lots of things like `.gitignore`, etc.
+* Add a fun gitmessage comment
+
+[npm](https://www.npmjs.com) configuration:
+
+* Remove need for using sudo by setting up npm to install to a specific global directory that doesn't need special permissions
 
 [Ruby](https://www.ruby-lang.org/en/) configuration:
 
@@ -100,6 +125,7 @@ Shell aliases and scripts:
 
 Todo
 ----
+* Figure out where to store more private info for easy setup outside of this repo
 * `setup.sh` to automate even more things
 * Brewfile to automate brew installations
 * Organize directories
