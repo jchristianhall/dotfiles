@@ -20,6 +20,7 @@
   mg = merge
   pf = push --force-with-lease
   pl = pull origin
+  pr = pull-request
   ps = push origin
   rb = rebase -i
   rl = reflog --pretty=reflog
