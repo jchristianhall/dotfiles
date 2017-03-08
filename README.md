@@ -11,6 +11,7 @@ Homebrew packages:
 
 ```
 diff-so-fancy
+hub
 node --without-npm
 rbenv
 tmux
