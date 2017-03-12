@@ -1,0 +1,36 @@
+"*":
+  "base16-syntax":
+    scheme: "Eighties"
+  core:
+    packagesWithKeymapsDisabled: [
+      "tree-view"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "base16-syntax"
+    ]
+  editor:
+    fontFamily: "Source Code Pro"
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    softWrapHangingIndent: 2
+  "exception-reporting":
+    userId: "4bb57017-5a94-cc48-ad17-4f74adc8b456"
+  "git-plus":
+    general:
+      _analyticsUserId: "06687862-4918-4037-8700-229d171f943d"
+  "linter-js-standard":
+    checkStyleDevDependencies: true
+  "one-dark-ui":
+    layoutMode: "Compact"
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "vim-mode":
+    useClipboardAsDefaultRegister: false
+  "vim-surround":
+    surroundCommand: "S"
+  welcome:
+    showOnStartup: false
