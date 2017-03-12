@@ -2,16 +2,22 @@
   "base16-syntax":
     scheme: "Eighties"
   core:
+    disabledPackages: [
+      "linter-rubocop"
+    ]
     packagesWithKeymapsDisabled: [
       "tree-view"
     ]
+    projectHome: "~/Sites"
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
       "base16-syntax"
     ]
+    useCustomTitleBar: true
   editor:
     fontFamily: "Source Code Pro"
+    fontSize: 16
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
@@ -24,6 +30,8 @@
       _analyticsUserId: "06687862-4918-4037-8700-229d171f943d"
   "linter-js-standard":
     checkStyleDevDependencies: true
+  "linter-rubocop":
+    command: "/Users/christianhall/.rbenv/versions/2.2.1/bin/rubocop -R"
   "one-dark-ui":
     layoutMode: "Compact"
   "tree-view":
