@@ -16,6 +16,7 @@
       "base16-syntax"
     ]
     useCustomTitleBar: true
+  "custom-app-icon": {}
   editor:
     fontFamily: "Source Code Pro"
     fontSize: 16
