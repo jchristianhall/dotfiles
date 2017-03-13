@@ -104,6 +104,12 @@ Most of these steps should be automated in `setup.sh` eventually.
 What's in it?
 -------------
 
+[atom](https://atom.io) configuration:
+* Config for all my usual preferences
+* Snippets for work
+* Keymappings for work
+* Custom icons for use with [custom app icon](https://github.com/danielbayley/atom-custom-app-icon)
+
 [git](http://git-scm.com/) configuration:
 
 * Adds a `create-branch` alias to create feature branches.
