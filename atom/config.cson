@@ -15,11 +15,12 @@
       "one-dark-ui"
       "base16-syntax"
     ]
-    useCustomTitleBar: true
+    titleBar: "custom"
   "custom-app-icon": {}
   editor:
     fontFamily: "Source Code Pro"
-    fontSize: 16
+    fontSize: 15
+    preferredLineLength: 100
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
@@ -34,8 +35,9 @@
     checkStyleDevDependencies: true
   "linter-rubocop":
     command: "/Users/christianhall/.rbenv/versions/2.2.1/bin/rubocop -R"
-  "one-dark-ui":
-    layoutMode: "Compact"
+  "linter-ui-default":
+    panelHeight: 69
+  "one-dark-ui": {}
   "tree-view":
     hideVcsIgnoredFiles: true
   "vim-mode":
