@@ -20,6 +20,7 @@
   editor:
     fontFamily: "Source Code Pro"
     fontSize: 16
+    preferredLineLength: 100
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
@@ -34,6 +35,8 @@
     checkStyleDevDependencies: true
   "linter-rubocop":
     command: "/Users/christianhall/.rbenv/versions/2.2.1/bin/rubocop -R"
+  "linter-ui-default":
+    panelHeight: 69
   "one-dark-ui": {}
   "tree-view":
     hideVcsIgnoredFiles: true

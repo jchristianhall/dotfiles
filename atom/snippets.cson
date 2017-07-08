@@ -97,11 +97,20 @@
          ======================================================================\
          ==== */$0
     """
-  'Comment Block':
-    'prefix': 'cb'
+  'Generic Comment Block':
+    'prefix': 'gcb'
     'body': """
       /**
        * $1
+       */$0
+    """
+  'Class Comment Block':
+    'prefix': 'ccb'
+    'body': """
+      /**
+       * @class       ${1:ClassName}
+       * @extends     {}
+       * @description description
        */$0
     """
   'Comment Footnote':
@@ -112,6 +121,85 @@
   'log':
     'prefix': 'log'
     'body': 'console.log($1)$0'
+
+# Marionette
+'.source.js':
+  'Marionette Layout View':
+    'prefix': 'mlv'
+    'body': """
+      import './index.scss'
+      import template from './index.tpl'
+      import { LayoutView } from 'backbone.marionette'
+
+      /**
+       * @class       ${1:ClassName}
+       * @extends     {LayoutView}
+       * @description Description
+       */
+      const ${1:ClassName} = LayoutView.extend({
+        template
+      })
+
+      export default ${1:ClassName}
+      $0
+    """
+  'Marionette Item View':
+    'prefix': 'miv'
+    'body': """
+      import './index.scss'
+      import template from './index.tpl'
+      import { ItemView } from 'backbone.marionette'
+
+      /**
+       * @class       ${1:ClassName}
+       * @extends     {ItemView}
+       * @description Description
+       */
+      const ${1:ClassName} = ItemView.extend({
+        template
+      })
+
+      export default ${1:ClassName}
+      $0
+    """
+  'Marionette Composite View':
+    'prefix': 'mcv'
+    'body': """
+      import './index.scss'
+      import template from './index.tpl'
+      import { CompositeView } from 'backbone.marionette'
+
+      /**
+       * @class       ${1:ClassName}
+       * @extends     {CompositeView}
+       * @description Description
+       */
+      const ${1:ClassName} = CompositeView.extend({
+        template
+      })
+
+      export default ${1:ClassName}
+      $0
+    """
+  'Marionette Collection View':
+    'prefix': 'mcov'
+    'body': """
+      import './index.scss'
+      import template from './index.tpl'
+      import { CollectionView } from 'backbone.marionette'
+
+      /**
+       * @class       ${1:ClassName}
+       * @extends     {CollectionView}
+       * @description Description
+       */
+      const ${1:ClassName} = CollectionView.extend({
+        template
+      })
+
+      export default ${1:ClassName}
+      $0
+    """
 
 # Underscore Templates
 '.text.html':
