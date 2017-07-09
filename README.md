@@ -27,6 +27,7 @@ imagemagick
 mysql56
 phantomjs
 redis
+watchman
 ```
 
 JavaScript:
