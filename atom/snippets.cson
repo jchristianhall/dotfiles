@@ -200,6 +200,20 @@
       export default ${1:ClassName}
       $0
     """
+  'Jest Test Template':
+    'prefix': 'jt'
+    'body': """
+      import ${1:Subject} from '../$1'
+      let subject
+      describe('$1', () => {
+        beforeAll(() => {
+          subject = new $1()
+        })
+        it('fails a test', () => {
+          expect(subject).toBeUndefined()$0
+        })
+      })
+    """
 
 # Underscore Templates
 '.text.html':
