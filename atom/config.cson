@@ -19,7 +19,6 @@
   "custom-app-icon": {}
   editor:
     fontFamily: "Source Code Pro"
-    fontSize: 16
     preferredLineLength: 100
     scrollPastEnd: true
     showIndentGuide: true
@@ -38,10 +37,20 @@
   "linter-ui-default":
     panelHeight: 69
   "one-dark-ui": {}
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      isDisabledIfNoConfigFile: true
+      isDisabledIfNotInPackageJson: true
+      showInStatusBar: true
+    prettierOptions:
+      singleQuote: true
+      trailingComma: "es5"
+    useEslint: true
+  "tree-view": {}
   "vim-mode":
     useClipboardAsDefaultRegister: false
+  "vim-mode-plus": {}
   "vim-surround":
     surroundCommand: "S"
   welcome:
