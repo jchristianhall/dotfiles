@@ -1,10 +1,14 @@
 "*":
+  "atom-ide-ui":
+    hyperclick:
+      darwinTriggerKeys: "altKey"
   "base16-syntax":
     scheme: "Eighties"
   core:
     closeDeletedFileTabs: true
     disabledPackages: [
       "linter-rubocop"
+      "linter"
     ]
     packagesWithKeymapsDisabled: [
       "tree-view"
@@ -19,6 +23,7 @@
   "custom-app-icon": {}
   editor:
     fontFamily: "Source Code Pro"
+    fontSize: 16
     preferredLineLength: 100
     scrollPastEnd: true
     showIndentGuide: true
