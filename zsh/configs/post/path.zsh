@@ -23,4 +23,7 @@ PATH="$NPM_PACKAGES/bin:$PATH"
 # AWS CLI
 export PATH=~/bin:$PATH
 
+# GN API
+export RACK_ENV='development'
+
 export -U PATH

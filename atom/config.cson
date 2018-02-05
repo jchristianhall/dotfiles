@@ -44,7 +44,6 @@
   "one-dark-ui": {}
   "prettier-atom":
     formatOnSaveOptions:
-      enabled: true
       isDisabledIfNoConfigFile: true
       isDisabledIfNotInPackageJson: true
       showInStatusBar: true
