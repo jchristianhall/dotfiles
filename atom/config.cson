@@ -2,6 +2,7 @@
   "atom-ide-ui":
     hyperclick:
       darwinTriggerKeys: "altKey"
+    use: {}
   "base16-syntax":
     scheme: "Eighties"
   core:
@@ -23,7 +24,6 @@
   "custom-app-icon": {}
   editor:
     fontFamily: "Source Code Pro"
-    fontSize: 16
     preferredLineLength: 100
     scrollPastEnd: true
     showIndentGuide: true
@@ -44,6 +44,7 @@
   "one-dark-ui": {}
   "prettier-atom":
     formatOnSaveOptions:
+      enabled: true
       isDisabledIfNoConfigFile: true
       isDisabledIfNotInPackageJson: true
       showInStatusBar: true

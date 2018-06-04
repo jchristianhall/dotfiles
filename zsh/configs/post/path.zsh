@@ -23,6 +23,9 @@ PATH="$NPM_PACKAGES/bin:$PATH"
 # AWS CLI
 export PATH=~/bin:$PATH
 
+# EB CLI
+export PATH=~/Library/Python/2.7/bin:$PATH
+
 # GN API
 export RACK_ENV='development'
 

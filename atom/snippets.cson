@@ -175,6 +175,39 @@
       export default ${1:ClassName}
       $0
     """
+  # React
+  'React Generic Component':
+    'prefix': 'rgc'
+    'body': """
+      import PropTypes from 'prop-types';
+      import React, { Component } from 'react';
+
+      class ${1:Name} extends Component {
+        render() {
+          return <div />;
+        }
+      }
+
+      $1.propTypes = {};
+
+      export default $1;
+      $0
+    """
+  'React Functional Component':
+    'prefix': 'rfc'
+    'body': """
+      import PropTypes from 'prop-types';
+      import React from 'react';
+
+      const ${1:Name} = props => {
+        return <div />;
+      };
+
+      $1.propTypes = {};
+
+      export default $1;
+      $0
+    """
   # Jest
   'Jest Test Template':
     'prefix': 'jt'
