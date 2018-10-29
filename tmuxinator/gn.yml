@@ -1,6 +1,6 @@
 # ~/.tmuxinator/gn.yml
 
-name: Development
+name: GN Web
 root: ~/Sites
 
 # Optional tmux socket

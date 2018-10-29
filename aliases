@@ -8,17 +8,18 @@ alias cc="say 'Command complete'"
 
 # Git
 alias gaac="g aa && g ci"
+alias gacm="g aa && g ci --amend"
 alias g="hub"
 
 # Node
-alias ygls="yarn global ls"
+alias ygls="yarn global list"
 alias yga="yarn global add"
 alias yi="yarn install"
 alias yr="yarn run"
 alias ys="yarn start"
+alias ngls="npm list -g --depth 0"
 
-# GoNoodle
-alias mux="tmuxinator"
+# GoNoodle API
 alias b="bundle"
 alias be="bundle exec"
 alias bi="bundle install --path vendor"
@@ -28,6 +29,10 @@ alias gns="bundle exec rails s -b 0.0.0.0"
 alias gnr="RESQUE_INLINE=1 bundle exec rails s -b 0.0.0.0"
 alias nukedb="bundle exec rake log:clear db:reset && bundle exec rake db:test:prepare && redis-cli flushall"
 alias nukedbf="FULL=1 bundle exec rake log:clear db:reset && bundle exec rake db:test:prepare && redis-cli flushall"
+alias gnfs="PORT=8082 yarn start:debug"
+
+# tmux
+alias mux="tmuxinator"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
