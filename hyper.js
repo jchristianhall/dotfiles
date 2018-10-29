@@ -115,7 +115,8 @@ module.exports = {
     'hyperterm-summon',
     'hyperterm-1password',
     'hyper-tabs-enhanced',
-    'hyper-statusline'
+    'hyper-statusline',
+    "hyperocean"
   ],
 
   // in development, you can create a directory under

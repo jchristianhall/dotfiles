@@ -9,6 +9,9 @@
     closeDeletedFileTabs: true
     disabledPackages: [
       "linter-rubocop"
+      "teletype"
+      "atom-ide-console"
+      "atom-ide-debugger"
       "linter"
     ]
     packagesWithKeymapsDisabled: [
@@ -24,7 +27,6 @@
   "custom-app-icon": {}
   editor:
     fontFamily: "Source Code Pro"
-    preferredLineLength: 100
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
@@ -55,7 +57,27 @@
   "tree-view": {}
   "vim-mode":
     useClipboardAsDefaultRegister: false
-  "vim-mode-plus": {}
+  "vim-mode-plus":
+    centerPaneOnMaximizePane: false
+    charactersToAddSpaceOnSurround: [
+      "("
+      "["
+      "{"
+      "<"
+    ]
+    clearHighlightSearchOnResetNormalMode: true
+    clearPersistentSelectionOnResetNormalMode: true
+    hideStatusBarOnMaximizePane: false
+    hideTabBarOnMaximizePane: false
+    highlightSearch: true
+    showHoverSearchCounter: true
+    smoothScrollOnFullScrollMotionDuration: 150
+    smoothScrollOnHalfScrollMotionDuration: 150
+    statusBarModeStringStyle: "long"
+    stayOnDelete: true
+    stayOnTransformString: true
+    stayOnYank: true
+    useClipboardAsDefaultRegister: true
   "vim-surround":
     surroundCommand: "S"
   welcome:
