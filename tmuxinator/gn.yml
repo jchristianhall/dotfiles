@@ -1,7 +1,7 @@
 # ~/.tmuxinator/gn.yml
 
 name: GN Web
-root: ~/Sites
+root: ~/Projects
 
 # Optional tmux socket
 # socket_name: foo
