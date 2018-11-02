@@ -29,4 +29,8 @@ export PATH=~/Library/Python/2.7/bin:$PATH
 # GN API
 export RACK_ENV='development'
 
+# ANDROID STUDIO
+export ANDROID_SDK=~/Library/Android/sdk:$PATH
+export PATH=~/Library/Android/sdk/platform-tools:$PATH
+
 export -U PATH
