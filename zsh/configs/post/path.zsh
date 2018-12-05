@@ -33,4 +33,7 @@ export RACK_ENV='development'
 export ANDROID_SDK=~/Library/Android/sdk:$PATH
 export PATH=~/Library/Android/sdk/platform-tools:$PATH
 
+# FASTLANE
+export PATH="$HOME/.fastlane/bin:$PATH"
+
 export -U PATH
