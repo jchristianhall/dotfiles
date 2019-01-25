@@ -1,8 +1,6 @@
-[init]
-  templatedir = ~/.gitmessage
 [user]
 	name = Christian Hall
-	email = jchristian192@gmail.com
+	email = jchristianhall@me.com
 [push]
   default = current
 [color]
