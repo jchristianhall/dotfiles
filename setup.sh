@@ -9,6 +9,7 @@ if [ ! -e $ASDF ]; then
 fi
 
 # Install Homebrew packages
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew bundle --file=${DOTFILES}/Brewfile
 
 # Set zsh as default shell
@@ -24,7 +25,7 @@ yarn global add gulp-cli pure-prompt webpack-cli
 gem install tmuxinator
 
 # Symlink dotfiles
-env RCRC=${DOTFILES}/rcrc rcup -f -x README.md -x Brewfile -x install.sh -x rcrc
+env RCRC=${DOTFILES}/rcrc rcup -f
 
 # Create Projects directory
 if [ ! -e $HOME/Projects ]; then
