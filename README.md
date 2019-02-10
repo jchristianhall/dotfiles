@@ -1,139 +1,23 @@
 # Personal dotfiles
 
-This is a fork of thoughtbot's [original](https://github.com/thoughtbot/dotfiles.git)
-because I'm picky. Constantly a work in progress.
-
-## Requirements
-
-Homebrew packages:
-
-```
-diff-so-fancy
-hub
-node --without-npm
-tmux
-tree
-yarn
-zsh
-zsh-syntax-highlighting
-```
-
-Casks:
-
-```
-aerial
-```
-
-Work specific Homebrew packages:
-
-```
-aws-elasticbeanstalk
-awscli
-cocoapods
-imagemagick
-mysql@5.6
-redis
-terraform
-terraform_landscape
-watchman
-```
-
-JavaScript:
-
-```
-gulp-cli
-webpack-cli
-```
-
-Ruby:
-
-```
-tmuxinator
-```
-
-Set zsh as your login shell (May need to do this through Users & Groups on MacOS):
-
-```
-chsh -s $(which zsh)
-```
+This is inspired by thoughtbot's [dotfiles](https://github.com/thoughtbot/dotfiles.git), as well as [David Calhoun's](https://github.com/dcalhoun/dotfiles). Constantly a work in progress.
 
 ## Install
 
 1. Download Xcode and CLI utilities
 
-1. Install Homebrew and Homebrew packages
-
-1. Install npm
-
-   ```
-   curl -L https://www.npmjs.org/install.sh | sh
-   ```
-
 1. Setup SSH key with GitHub
 
    Be sure to permanently add the key in `~/.ssh/config`
 
-1. Clone onto your laptop:
+1. Clone and run setup script:
 
    ```
-   git clone git://github.com/jchristianhall/dotfiles.git ~/dotfiles
+   git clone git://github.com/jchristianhall/dotfiles.git ~/.dotfiles
+   ~/.dotfiles/setup.sh
    ```
-
-1. Install [rcm](https://github.com/thoughtbot/rcm):
-
-   ```
-   brew tap thoughtbot/formulae
-   brew install rcm
-   ```
-
-1. Install the dotfiles:
-
-   ```
-   env RCRC=$HOME/dotfiles/rcrc rcup
-   ```
-
-   You should run `rcup` after pulling a new version of the repository to symlink
-   any new files in the repository.
-
-1. Install [pure prompt](https://github.com/sindresorhus/pure#manually)
-
-   ```
-   cd pure
-   git submodule init
-   git submodule update
-   ln -s "$HOME/dotfiles/pure/pure.zsh" "$HOME/.zsh/functions/prompt_pure_setup"
-   ln -s "$HOME/dotfiles/pure/async.zsh" "$HOME/.zsh/functions/async"
-   autoload -U promptinit; promptinit
-   prompt pure
-   ```
-
-1. Install global yarn packages
-
-1. [Install asdf](https://github.com/asdf-vm/asdf#installation)
-
-1. Start mysql and redis if you haven't already
-
-```
-brew services start mysql@5.6 redis
-```
-
-1. Make sure mysql is linked
-
-```
-brew link mysql@5.6 --force
-```
-
-1. Manually add tmuxinator configs from private location
-
-Most of these steps should be automated in `setup.sh` eventually.
 
 ## What's in it?
-
-[atom](https://atom.io) configuration:
-
-- Config for all my usual preferences
-- Snippets for work
-- Keymappings for work
 
 [git](http://git-scm.com/) configuration:
 
@@ -161,7 +45,6 @@ Most of these steps should be automated in `setup.sh` eventually.
 [Ruby](https://www.ruby-lang.org/en/) configuration:
 
 - Add trusted binstubs to the `PATH`.
-- Load rbenv into the shell, adding shims onto our `PATH`.
 
 Shell aliases and scripts:
 
@@ -172,15 +55,5 @@ Shell aliases and scripts:
 
 ## Todo
 
-- Figure out where to store more private info for easy setup outside of this repo
-- `setup.sh` to automate even more things
-- Brewfile to automate brew installations
-- Organize directories
 - Manage VSCode in this repo?
-
-## License
-
-dotfiles is copyright © 2009-2016 thoughtbot. It is free software, and may be
-redistributed under the terms specified in the [`LICENSE`] file.
-
-[`license`]: /LICENSE
+- Manage MacOS system prefs with `.macos`
