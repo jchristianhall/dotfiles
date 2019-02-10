@@ -13,7 +13,7 @@ This is inspired by thoughtbot's [dotfiles](https://github.com/thoughtbot/dotfil
 1. Clone and run setup script:
 
    ```
-   git clone git://github.com/jchristianhall/dotfiles.git ~/.dotfiles
+   git clone git@github.com:jchristianhall/dotfiles.git ~/.dotfiles
    ~/.dotfiles/setup.sh
    ```
 
