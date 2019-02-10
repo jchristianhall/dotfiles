@@ -6,7 +6,7 @@ This is inspired by thoughtbot's [dotfiles](https://github.com/thoughtbot/dotfil
 
 1. Download Xcode and CLI utilities
 
-1. Setup SSH key with GitHub
+1. [Setup SSH key with GitHub](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
 
    Be sure to permanently add the key in `~/.ssh/config`
 
