@@ -1,5 +1,5 @@
 tap 'caskroom/cask'
-tap 'hombrew/cask-fonts'
+tap 'homebrew/cask-fonts'
 tap 'thoughtbot/formulae'
 
 brew 'diff-so-fancy'
