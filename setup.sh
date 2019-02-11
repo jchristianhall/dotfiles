@@ -22,7 +22,7 @@ curl -L https://www.npmjs.org/install.sh | sh
 yarn global add gulp-cli pure-prompt webpack-cli
 
 # Install tmuxinator
-gem install tmuxinator
+gem install tmuxinator --install-dir $HOME/.gem
 
 # Symlink dotfiles
 env RCRC=${DOTFILES}/rcrc rcup -f
