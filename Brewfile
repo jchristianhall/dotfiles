@@ -4,7 +4,6 @@ tap 'thoughtbot/formulae'
 
 brew 'diff-so-fancy'
 brew 'hub'
-brew 'node --without-npm'
 brew 'rcm'
 brew 'tmux'
 brew 'tree'
