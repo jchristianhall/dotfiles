@@ -19,7 +19,7 @@ chsh -s $(which zsh)
 curl -L https://www.npmjs.org/install.sh | sh
 
 # Install pure-prompt
-yarn global add gulp-cli pure-prompt webpack-cli
+yarn global add gulp-cli pure-prompt webpack-cli webpack-dev-server
 
 # Install tmuxinator
 gem install tmuxinator --install-dir $HOME/.gem
