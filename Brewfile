@@ -1,6 +1,7 @@
 tap 'caskroom/cask'
 tap 'homebrew/cask-fonts'
 tap 'thoughtbot/formulae'
+tap 'caskroom/versions'
 
 brew 'diff-so-fancy'
 brew 'hub'
@@ -34,4 +35,5 @@ brew 'redis'
 brew 'terraform'
 brew 'terraform_landscape'
 brew 'watchman'
+cask 'java8'
 cask 'react-native-debugger'
