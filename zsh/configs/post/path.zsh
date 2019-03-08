@@ -29,8 +29,11 @@ export PATH=~/Library/Python/2.7/bin:$PATH
 export RACK_ENV='development'
 
 # ANDROID STUDIO
-export ANDROID_SDK=~/Library/Android/sdk:$PATH
-export PATH=~/Library/Android/sdk/platform-tools:$PATH
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # FASTLANE
 export PATH="$HOME/.fastlane/bin:$PATH"
