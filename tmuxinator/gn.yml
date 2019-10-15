@@ -21,7 +21,7 @@ root: ~/Projects
 windows:
   - gn-api:
       - cd gn-api && bundle exec rails server -p 3000 -b 0.0.0.0
-  - gn-web:
-      - cd gn-web && yarn start
-  - gn-web-family:
-      - cd gn-web-family && PORT=8082 yarn start:debug
+  - gn-educator-web:
+      - cd gn-educator-web && yarn start
+  - gn-family-web:
+      - cd gn-family-web && PORT=8082 yarn start:debug
