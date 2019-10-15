@@ -6,7 +6,7 @@ module.exports = {
     cursorShape: "BEAM",
     cursorBlink: true,
     foregroundColor: "#eff0ea",
-    backgroundColor: "#191919",
+    backgroundColor: "rgba(30,30,30,0.9)",
     borderColor: "#191919",
     css: "",
     termCSS: "",
@@ -39,7 +39,7 @@ module.exports = {
     copyOnSelect: false,
     summon: {
       hotkey: "Ctrl+;",
-      hideDock: true,
+      hideDock: false,
       hideOnBlur: true
     }
   },
