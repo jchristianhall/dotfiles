@@ -24,4 +24,4 @@ windows:
   - gn-educator-web:
       - cd gn-educator-web && yarn start
   - gn-family-web:
-      - cd gn-family-web && PORT=8082 yarn start:debug
+      - cd gn-family-web && yarn start --port 8081

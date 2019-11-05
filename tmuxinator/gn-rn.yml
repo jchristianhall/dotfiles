@@ -24,4 +24,4 @@ windows:
   - rn:
       - cd gn-family-native && yarn start:native
   - build:
-      - open "rndebugger://set-debugger-loc?host=localhost&port=8081" && cd gn-family-native && yarn build:ios
+      - open "rndebugger://set-debugger-loc?host=localhost&port=8081" && cd gn-family-native && yarn build:ios --simulator 'iPhone 11'
