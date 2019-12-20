@@ -27,9 +27,13 @@ alias bp="bundle package"
 alias mi="bundle exec rake db:migrate"
 alias gns="bundle exec rails s -b 0.0.0.0"
 alias gnr="RESQUE_INLINE=1 bundle exec rails s -b 0.0.0.0"
-alias nukedb="bundle exec rake log:clear db:reset && bundle exec rake db:test:prepare && redis-cli flushall"
-alias nukedbf="FULL=1 bundle exec rake log:clear db:reset && bundle exec rake db:test:prepare && redis-cli flushall"
-alias gnfs="PORT=8082 yarn start:debug"
+
+# GoNoodle RN
+alias ysn="yarn start:native"
+alias ybi="yarn build:ios --simulator 'iPhone 11'"
+alias yba="yarn build:android"
+alias ypis="ENV=staging PLATFORM=ios yarn push"
+alias ypas="ENV=staging PLATFORM=android yarn push"
 
 # tmux
 alias mux="tmuxinator"
