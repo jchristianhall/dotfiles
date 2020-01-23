@@ -19,6 +19,11 @@ GEM_HOME="$HOME/.gem"
 export PATH="$GEM_HOME/bin:$PATH"
 export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/ # mysql2 missing library fix
 
+# Mysql@5.6
+export LDFLAGS="-L/usr/local/opt/mysql@5.6/lib"
+export CPPFLAGS="-I/usr/local/opt/mysql@5.6/include"
+export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+
 # AWS CLI
 export PATH=~/bin:$PATH
 
