@@ -40,3 +40,6 @@ alias mux="tmuxinator"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
+
+# Kick SadChad
+alias sadchad="cd ~/Projects/RadChad && heroku ps:restart -a radchad"
