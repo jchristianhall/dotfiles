@@ -1,6 +1,6 @@
 # ~/.tmuxinator/gn.yml
 
-name: GN React Native
+name: TN Web
 root: ~/Projects
 
 # Optional tmux socket
@@ -19,9 +19,7 @@ root: ~/Projects
 # tmux_command: byobu
 
 windows:
-  - gn-api:
-      - cd gn-api && bundle exec rails server -p 3000 -b 0.0.0.0
-  - rn:
-      - cd gn-family-native && yarn start
-  - build:
-      - cd gn-family-native && yarn run-ios --simulator 'iPhone 11'
+  - api:
+      - cd dotcom
+  - tn-web:
+      - cd tn-web

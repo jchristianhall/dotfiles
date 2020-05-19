@@ -9,7 +9,7 @@ alias cc="say 'Command complete'"
 # Git
 alias gaac="g aa && g ci"
 alias gacm="g aa && g ci --amend"
-alias g="hub"
+alias g="git"
 
 # Node
 alias ygls="yarn global list"
@@ -19,26 +19,8 @@ alias yr="yarn run"
 alias ys="yarn start"
 alias ngls="npm list -g --depth 0"
 
-# GoNoodle API
-alias b="bundle"
-alias be="bundle exec"
-alias bi="bundle install --path vendor"
-alias bp="bundle package"
-alias mi="bundle exec rake db:migrate"
-alias gns="bundle exec rails s -b 0.0.0.0"
-alias gnr="RESQUE_INLINE=1 bundle exec rails s -b 0.0.0.0"
-
-# GoNoodle RN
-alias yri="yarn run-ios --simulator 'iPhone 11'"
-alias yra="yarn run-android"
-alias ypis="ENV=staging PLATFORM=ios yarn push"
-alias ypas="ENV=staging PLATFORM=android yarn push"
-
 # tmux
 alias mux="tmuxinator"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
-
-# Kick SadChad
-alias sadchad="cd ~/Projects/RadChad && heroku ps:restart -a radchad"

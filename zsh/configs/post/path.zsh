@@ -19,29 +19,4 @@ GEM_HOME="$HOME/.gem"
 export PATH="$GEM_HOME/bin:$PATH"
 export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/ # mysql2 missing library fix
 
-# Mysql@5.6
-export LDFLAGS="-L/usr/local/opt/mysql@5.6/lib"
-export CPPFLAGS="-I/usr/local/opt/mysql@5.6/include"
-export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
-
-# AWS CLI
-export PATH=~/bin:$PATH
-
-# EB CLI
-export PATH=~/Library/Python/2.7/bin:$PATH
-
-# GN API
-export RACK_ENV='development'
-
-# ANDROID STUDIO
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export JAVA_HOME=`/usr/libexec/java_home`
-
-# FASTLANE
-export PATH="$HOME/.fastlane/bin:$PATH"
-
 export -U PATH

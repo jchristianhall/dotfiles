@@ -21,15 +21,9 @@ This is inspired by thoughtbot's [dotfiles](https://github.com/thoughtbot/dotfil
 
 [git](http://git-scm.com/) configuration:
 
-- Adds a `create-branch` alias to create feature branches.
-- Adds a `delete-branch` alias to delete feature branches.
-- Adds a `merge-branch` alias to merge feature branches into master.
-- Adds an `up` alias to fetch and rebase `origin/master` into the feature
-  branch. Use `git up -i` for interactive rebases.
 - Adds lots of aliases for common commands.
 - Makes output pretty with `diff-so-fancy`.
 - Sets smart defaults for lots of things like `.gitignore`, etc.
-- Add a fun gitmessage comment
 
 [tmux](http://robots.thoughtbot.com/a-tmux-crash-course) configuration:
 
