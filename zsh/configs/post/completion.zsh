@@ -6,5 +6,5 @@ autoload -U promptinit; promptinit
 prompt pure
 
 # completion
-autoload -U compinit
+autoload -Uz compinit
 compinit

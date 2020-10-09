@@ -1,6 +1,6 @@
-# ~/.tmuxinator/Tn.yml
+# ~/.tmuxinator/serta.yml
 
-name: TN Web
+name: Serta Web
 root: ~/Projects
 
 # Optional tmux socket
@@ -20,6 +20,6 @@ root: ~/Projects
 
 windows:
   - dotcom:
-      - cd dotcom && ENV=tuftandneedle bin/start-dev
-  - tn-web:
-      - cd tn-web && npm start
+      - cd dotcom && ENV=serta bin/start-dev
+  - serta-web:
+      - cd serta-web && npm start

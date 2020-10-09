@@ -46,5 +46,4 @@ _load_settings "$HOME/.zsh/configs"
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # asdf
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+. /usr/local/opt/asdf/asdf.sh

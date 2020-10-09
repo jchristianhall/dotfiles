@@ -4,6 +4,7 @@ tap 'thoughtbot/formulae'
 tap 'homebrew/cask-versions'
 
 brew 'diff-so-fancy'
+brew 'gh'
 brew 'rcm'
 brew 'tmux'
 brew 'tmuxinator'
@@ -23,4 +24,14 @@ cask 'iterm2'
 cask 'slack'
 cask 'visual-studio-code'
 
+# asdf
+brew 'coreutils'
+brew 'curl'
+brew 'git'
+brew 'gpg'
+brew 'asdf'
+
 # Work
+brew 'Arkweid/lefthook/lefthook'
+brew 'libpq'
+cask 'docker'

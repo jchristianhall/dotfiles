@@ -1,15 +1,9 @@
 #!/bin/sh
 
 DOTFILES=$HOME/.dotfiles
-ASDF=$HOME/.asdf
-
-# Install asdf
-if [ ! -e $ASDF ]; then
-  git clone https://github.com/asdf-vm/asdf.git $ASDF --branch v0.6.3
-fi
 
 # Install Homebrew packages
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew bundle --file=${DOTFILES}/Brewfile
 
 # Set zsh as default shell
@@ -20,9 +14,6 @@ curl -L https://www.npmjs.org/install.sh | sh
 
 # Install pure-prompt
 yarn global add pure-prompt react-devtools release webpack-cli webpack-dev-server
-
-# Install tmuxinator
-gem install tmuxinator --install-dir $HOME/.gem
 
 # Symlink dotfiles
 env RCRC=${DOTFILES}/rcrc rcup -f

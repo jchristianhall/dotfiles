@@ -1,6 +1,6 @@
-# ~/.tmuxinator/Tn.yml
+# ~/.tmuxinator/br.yml
 
-name: TN Web
+name: BR Web
 root: ~/Projects
 
 # Optional tmux socket
@@ -20,6 +20,6 @@ root: ~/Projects
 
 windows:
   - dotcom:
-      - cd dotcom && ENV=tuftandneedle bin/start-dev
-  - tn-web:
-      - cd tn-web && npm start
+      - cd dotcom && ENV=beautyrest bin/start-dev
+  - br-web:
+      - cd br-web && npm start
