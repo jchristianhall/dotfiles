@@ -20,6 +20,6 @@ root: ~/Projects
 
 windows:
   - dotcom:
-      - cd dotcom && ENV=beautyrest bin/start-dev
+      - cd dotcom && BRAND=beautyrest bin/start-dev
   - br-web:
       - cd br-web && npm start

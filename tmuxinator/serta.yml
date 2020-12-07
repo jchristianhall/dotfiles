@@ -20,6 +20,6 @@ root: ~/Projects
 
 windows:
   - dotcom:
-      - cd dotcom && ENV=serta bin/start-dev
+      - cd dotcom && BRAND=serta bin/start-dev
   - serta-web:
       - cd serta-web && npm start

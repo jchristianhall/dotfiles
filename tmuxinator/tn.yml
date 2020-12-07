@@ -20,6 +20,6 @@ root: ~/Projects
 
 windows:
   - dotcom:
-      - cd dotcom && ENV=tuftandneedle bin/start-dev
+      - cd dotcom && BRAND=tuftandneedle bin/start-dev
   - tn-web:
       - cd tn-web && npm start

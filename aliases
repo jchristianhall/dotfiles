@@ -18,9 +18,26 @@ alias yi="yarn install"
 alias yr="yarn run"
 alias ys="yarn start"
 alias ngls="npm list -g --depth 0"
+alias ns="npm start"
+alias ni="npm install"
 
 # tmux
 alias mux="tmuxinator"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
+
+# Work
+alias tnsu="BRAND=tuftandneedle bin/setup"
+alias tnmi="BRAND=tuftandneedle bin/migrate"
+alias tnsd="BRAND=tuftandneedle bin/start-dev"
+
+alias sesu="BRAND=serta bin/setup"
+alias semi="BRAND=serta bin/migrate"
+alias sesd="BRAND=serta bin/start-dev"
+
+alias brsu="BRAND=beautyrest bin/setup"
+alias brmi="BRAND=beautyrest bin/migrate"
+alias brsd="BRAND=beautyrest bin/start-dev"
+
+alias nsn="npm run start:next"

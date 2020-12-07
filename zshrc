@@ -47,3 +47,6 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # asdf
 . /usr/local/opt/asdf/asdf.sh
+
+# direnv
+eval "$(direnv hook zsh)"
